@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  height: 100vh;
+  position: relative;
+}
+::-webkit-input-placeholder {
+  /* Edge */
+  font-size: 80%;
+  text-align: center;
+  color: #e73c7e;
+}
+
+input {
+  padding: 0.5rem;
+  width: 80%;
+}
+
+body {
+  font-size: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#emojis span:hover {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 0.2rem;
+  box-shadow: 0px 3px 5px -2px #f1cf34;
+}
+
+.coded-with {
+  margin-top: 30px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  min-height: 15vh;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+}
+footer a {
+  text-decoration: underline;
+}
